@@ -1,0 +1,115 @@
+[project]
+name = "cua"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Shayan", email = "shayanamir619@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=4.4.1",
+    "numpy>=2.3.5",
+    "openenv-core==0.1.1",
+    "requests>=2.32.5",
+    "torchvision>=0.24.1",
+    "gradio>=6.0.2",
+    "trackio>=0.10.0",
+    "transformers>=4.57.3",
+    "trl>=0.25.1",
+    "pillow>=11.3.0",
+    "typer>=0.20.0",
+    "openenv",
+    "ruff>=0.1.0",
+    "modal>=1.2.5",
+    "pydantic-settings>=2.12.0",
+    "wandb>=0.23.1",
+    "peft>=0.13.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.8,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+openenv = { git = "https://github.com/meta-pytorch/OpenEnv.git", rev = "bf5e968286e0d49cdc03fd904d48faff4b15a437" }
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.12
+target-version = "py312"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = [
+    "E4",   # pycodestyle errors
+    "E7",
+    "E9",
+    "F",    # Pyflakes
+    "I",    # isort
+]
+ignore = []
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.ruff.lint.isort]
+# Use a single line for each import
+force-single-line = false
+# Sort imports within their section
+force-sort-within-sections = true
+# Known first party modules
+known-first-party = ["cua", "envs"]
+# Section order
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
