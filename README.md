@@ -30,7 +30,7 @@ the training parameters are managed via ```configs/lfm2_350m_lora.yaml```:
 
 | Reward Mean | Completion Length | Entropy |
 | :---: | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/d773f77c-a8f7-493f-9acc-a0eb71baa1b2" alt="Reward Mean" width="100%"> | <img src="https://github.com/user-attachments/assets/d0fda935-4786-4c75-9b46-de6e977f322a" alt="Completion Length" width="100%"> | <img src="https://github.com/user-attachments/assets/08663609-aab3-48a2-8b2e-875b161d86a3" alt="Entropy" width="100%"> |
+| <img src="https://github.com/user-attachments/assets/b7cf6f6a-29b4-434c-aa55-463c205c9e38" alt="Reward Mean" width="100%">  | <img src="https://github.com/user-attachments/assets/5a575da2-bcfe-4b1f-9f7f-2fbf3c613d91" alt="Completion Length" width="100%"> | <img src="https://github.com/user-attachments/assets/3d88f758-84de-4ead-a512-3d651b3c6311" alt="Entropy" width="100%"> |
 
 ## usage
 ### 1. local setup
