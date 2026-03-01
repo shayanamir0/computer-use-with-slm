@@ -67,5 +67,3 @@ uv run python -m src.cua.evaluate
 ```
 this script will run the model against the BrowserGym sandbox locally. It captures the agent's step-by-step navigation and saves the visual output as screenshots in the ```./media/``` directory.
 
-## acknowledgements
-* built using the concepts 
