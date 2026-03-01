@@ -1,6 +1,6 @@
 # Computer Use with a SLM using GRPO and OpenEnv
  
-this project involves fine-tuning a Small Language Model using Reinforcement Learning (GRPO) to independently learn to navigate environments and interact with browser elements, essentially enabling Computer Use. I've taught the model to click a button element but it could be extended to more complex tasks like filling a form and booking a flight based on environmental rewards. I used A100 40GB GPU via Modal requiring around ~$3 worth of compute for the ```click-test``` task. You can find the Hugging Face link to my trained model [here](DingoBeast/LFM2-350M-ComputerUse).
+this project involves fine-tuning a Small Language Model using Reinforcement Learning (GRPO) to independently learn to navigate environments and interact with browser elements, essentially enabling Computer Use. I've taught the model to click a button element but it could be extended to more complex tasks like filling a form and booking a flight based on environmental rewards. I used A100 40GB GPU via Modal requiring around ~$3 worth of compute for the ```click-test``` task. You can find the Hugging Face link to my trained model [here](https://huggingface.co/DingoBeast/LFM2-350M-ComputerUse).
  
 <img width="3872" height="1088" alt="computer use with slm" src="https://github.com/user-attachments/assets/b0ad81ab-47f5-401d-84bd-263821009a1d" />
 
